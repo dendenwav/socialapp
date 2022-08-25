@@ -1,3 +1,5 @@
+import Share from '../share/Share';
+import Post from '../post/Post';
 import useStyles from './FeedStyle';
 
 export default function Feed() {
@@ -5,7 +7,10 @@ export default function Feed() {
 
     return (
         <div className={classes.feedContainer}>
-            feed
+            <div className={classes.feedWrapper}>
+                <Share/>
+                <Post/>
+            </div>
         </div>
     )
 }

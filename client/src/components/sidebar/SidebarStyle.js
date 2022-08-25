@@ -4,7 +4,15 @@ export default makeStyles((theme) => ({
     sidebarContainer: {
         flex: 3,
         height: 'calc(100vh - 50px)',
-        backgroundColor: '#ffffdd',
+        overflowY: 'auto',
+        "&::-webkit-scrollbar": {
+            width: '7px',
+        },
+        "&::-webkit-scrollbar-thumb": {
+            backgroundColor: '#d6d6d6',
+            borderRadius: '10px',
+            width: '2px',
+        },
     },
     sidebarWrapper: {
         padding: '20px',

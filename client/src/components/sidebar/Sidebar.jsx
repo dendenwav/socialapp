@@ -54,6 +54,90 @@ export default function Sidebar() {
                         <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
                         <span className={classes.sidebarFriendName}>John Doe</span>
                     </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
+                    <li className={classes.sidebarFriendListItem}>
+                        <img src="/assets/person/2.jpeg" alt="" className={classes.sidebarFriendImg}/>
+                        <span className={classes.sidebarFriendName}>John Doe</span>
+                    </li>
                 </ul>
             </div>
         </div>
