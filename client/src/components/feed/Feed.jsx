@@ -1,6 +1,7 @@
 import Share from '../share/Share';
 import Post from '../post/Post';
 import useStyles from './FeedStyle';
+import { Posts } from '../../dummyData';
 
 export default function Feed() {
     const classes = useStyles();
@@ -9,7 +10,11 @@ export default function Feed() {
         <div className={classes.feedContainer}>
             <div className={classes.feedWrapper}>
                 <Share/>
-                <Post/>
+                {
+                    Posts.map((p) => (
+                        <Post key={p.id} post={p}/>
+                    ))
+                }
             </div>
         </div>
     )

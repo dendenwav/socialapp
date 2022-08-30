@@ -37,7 +37,7 @@ export default makeStyles((theme) => ({
         fontSize: '12px',
     },
     postBody: {
-        marginTop: '20px 0',
+        marginTop: '20px',
     },
     postImg: {
         marginTop: '20px',

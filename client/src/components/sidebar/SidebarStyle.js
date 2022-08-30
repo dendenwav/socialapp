@@ -5,6 +5,8 @@ export default makeStyles((theme) => ({
         flex: 3,
         height: 'calc(100vh - 50px)',
         overflowY: 'auto',
+        position: 'sticky',
+        top: '50px',
         "&::-webkit-scrollbar": {
             width: '7px',
         },
@@ -44,17 +46,5 @@ export default makeStyles((theme) => ({
         margin: '0',
         padding: '0',
         listStyle: 'none',
-    },
-    sidebarFriendListItem: {
-        display: 'flex',
-        alignItems: 'center',
-        marginBottom: '20px',
-    },
-    sidebarFriendImg: {
-        width: '32px',
-        height: '32px',
-        borderRadius: '50%',
-        objectFit: 'cover',
-        marginRight: '10px',
     },
 }));
