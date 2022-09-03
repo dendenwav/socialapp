@@ -1,4 +1,5 @@
 import { Chat, Notifications, Person, Search } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 
 import useStyles from './TopbarStyle';
 
@@ -8,7 +9,9 @@ export default function Topbar() {
     return (
         <div className={classes.topbarContainer}>
             <div className={classes.topbarLeft}>
-                <span className={classes.logo}>SocialApp</span>
+                <Link to="/" className={classes.topbarHomeLink}>
+                    <span className={classes.logo}>SocialApp</span>
+                </Link>
             </div>
             <div className={classes.topbarCenter}>
                 <div className={classes.searchbar}>

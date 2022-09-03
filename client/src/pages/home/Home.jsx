@@ -1,8 +1,8 @@
 import useStyles from './HomeStyle';
-import Topbar from "../../topbar/Topbar";
-import Sidebar from "../../sidebar/Sidebar";
-import Feed from "../../feed/Feed";
-import Rightbar from "../../rightbar/Rightbar";
+import Topbar from "../../components/topbar/Topbar";
+import Sidebar from "../../components/sidebar/Sidebar";
+import Feed from "../../components/feed/Feed";
+import Rightbar from "../../components/rightbar/Rightbar";
 
 export default function Home() {
     const classes = useStyles();

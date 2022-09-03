@@ -1,11 +1,12 @@
 import useStyles from './ProfileStyle';
-import Topbar from "../../topbar/Topbar";
-import Sidebar from "../../sidebar/Sidebar";
-import Feed from "../../feed/Feed";
-import Rightbar from "../../rightbar/Rightbar";
+import Topbar from "../../components/topbar/Topbar";
+import Sidebar from "../../components/sidebar/Sidebar";
+import Feed from "../../components/feed/Feed";
+import Rightbar from "../../components/rightbar/Rightbar";
 
 export default function Profile() {
     const classes = useStyles();
+    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
     return (
         <>
@@ -15,8 +16,8 @@ export default function Profile() {
                 <div className={classes.profileRight}>
                     <div className={classes.profileRightHeader}>
                         <div className={classes.profileCover}>
-                            <img src="assets/post/3.jpeg" alt="" className={classes.profileCoverImg}/>
-                            <img src="assets/person/7.jpeg" alt="" className={classes.profileUserImg}/>
+                            <img src={PF + "post/3.jpeg"} alt="" className={classes.profileCoverImg}/>
+                            <img src={PF + "person/7.jpeg"} alt="" className={classes.profileUserImg}/>
                         </div>
                         <div className={classes.profileInfo}>
                             <h4 className={classes.profileInfoName}>Jane Doe</h4>

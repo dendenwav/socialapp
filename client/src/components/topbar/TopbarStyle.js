@@ -24,6 +24,9 @@ export default makeStyles((theme) => ({
         justifyContent: 'space-around',
         color: '#fff',
     },
+    topbarHomeLink: {
+        textDecoration: 'none',
+    },
     topbarImg: {
         width: '32px',
         height: '32px',
