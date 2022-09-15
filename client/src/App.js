@@ -1,17 +1,26 @@
+import React, { useState } from "react";
+import { BrowserRouter as Router , Routes, Route, Navigate } from "react-router-dom";
+
 import Home from "./pages/home/Home";
-import Login from "./pages/login/Login";
 import Profile from "./pages/profile/Profile";
-import Register from "./pages/register/Register";
-import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
+import Auth from "./pages/auth/Auth";
+import Topbar from "./components/topbar/Topbar";
 
 function App() {
+  const [currentId, setCurrentId] = useState(0);
+  const user = JSON.parse(localStorage.getItem('profile'));
+
   return (
     <Router>
+      <Topbar/>
       <Routes>
-        <Route exact path="/" element={<Home/>}/>
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/register" element={<Register/>}/>
-        <Route path="/profile/:username" element={<Profile/>}/>
+        <Route exact path="/" element={<Home currentId={currentId} setCurrentId={setCurrentId}/>}/>
+        <Route exact path="/profile/:username" element={<Profile setCurrentId={setCurrentId}/>}/>        
+        {!user ? (
+          <Route exact path="/auth" element={<Auth />}/>
+        ) : (
+          <Route exact path="/auth" element={<Navigate to="/" />}/>
+        )}        
       </Routes>
     </Router>
   );

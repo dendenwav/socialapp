@@ -10,7 +10,6 @@ export default function Profile() {
 
     return (
         <>
-            <Topbar/>
             <div className={classes.profileContainer}>                
                 <Sidebar/>
                 <div className={classes.profileRight}>
@@ -20,12 +19,12 @@ export default function Profile() {
                             <img src={PF + "person/7.jpeg"} alt="" className={classes.profileUserImg}/>
                         </div>
                         <div className={classes.profileInfo}>
-                            <h4 className={classes.profileInfoName}>Jane Doe</h4>
-                            <span className={classes.profileInfoDesc}>Hello this is my desc !</span>
+                            <h4 className={classes.profileInfoName}>{}</h4>
+                            <span className={classes.profileInfoDesc}>{}</span>
                         </div>
                     </div>
                     <div className={classes.profileRightBody}>
-                        <Feed/>
+                        <Feed username="jane"/>
                         <Rightbar profile/>
                     </div>
                 </div>

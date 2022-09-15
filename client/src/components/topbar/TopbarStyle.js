@@ -26,6 +26,12 @@ export default makeStyles((theme) => ({
     },
     topbarHomeLink: {
         textDecoration: 'none',
+        display: 'flex',
+        alignItems: 'center'
+    },
+    Icon: {
+        color: '#f1c40f',
+        fontSize: '32px'
     },
     topbarImg: {
         width: '32px',
@@ -53,7 +59,7 @@ export default makeStyles((theme) => ({
         fontSize: '20px !important',
         marginLeft: '10px',
         marginRight: '5px',
-        color: '#ff355e',// #ffd800 for yellow
+        color: '#ff355e',
     },
     searchInput: {
         border: 'none',
@@ -78,7 +84,7 @@ export default makeStyles((theme) => ({
     topbarIconBadge: {
         width: '15px',
         height: '15px',
-        backgroundColor: '#F6BE00',
+        backgroundColor: '#f1c40f',
         color: '#fff',
         borderRadius: '50%',
         position: 'absolute',

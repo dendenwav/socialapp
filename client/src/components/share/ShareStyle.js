@@ -60,11 +60,19 @@ export default makeStyles((theme) => ({
     },
     shareButton: {
         border: 'none',
+        textTransform: 'uppercase',
         padding: '7px',
         borderRadius: '5px',
-        backgroundColor: '#ff355e',
-        fontWeight: '500',
+        backgroundColor: '#f1c40f',
+        fontSize: '14px',
+        fontWeight: '900',
         cursor: 'pointer',
         color: '#fff',
     },
+    fileInput: {
+        display: 'none',
+    },
+    fileButton: {
+        textTransform: 'none',
+    }
 }));

@@ -10,11 +10,18 @@ export default makeStyles((theme) => ({
     postWrapper: {
         padding: '20px',
     },
+    media: {
+        height: '100px',
+        width: '100%',
+    },
     postHeader: {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
         padding: '0 10px',
+    },
+    profileLink: {
+        textDecoration: 'none',
     },
     postProfileImg: {
         width: '32px',
@@ -42,8 +49,8 @@ export default makeStyles((theme) => ({
     postImg: {
         marginTop: '20px',
         width: '100%',
-        maxHeight: '600px',
-        objectFit: 'contain',
+        maxHeight: '800px',
+        objectFit: 'cover',
     },
     postFooter: {
         display: 'flex',

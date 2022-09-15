@@ -1,5 +1,4 @@
 import { Bookmark, Chat, Event, Group, HelpOutline, PlayCircleFilledOutlined, RssFeed, School, WorkOutline } from '@material-ui/icons';
-import { Users } from '../../dummyData';
 import Friend from '../friend/Friend';
 import useStyles from './SidebarStyle';
 
@@ -53,9 +52,9 @@ export default function Sidebar() {
 
                 <ul className={classes.sidebarFriendList}>
                     {
-                        Users.map(u => (
-                            <Friend key={u.id} user={u}/>
-                        ))
+                        // Users.map(u => (
+                        //     <Friend key={u.id} user={u}/>
+                        // ))
                     }
                 </ul>
             </div>

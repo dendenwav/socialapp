@@ -41,11 +41,23 @@ export const deleteUser = async (req, res) => {
 
 //get a user
 export const getUser = async (req, res) => {
+  const userId = req.params.id;
   try {
-    const user = await UserModel.findById(req.params.id);
+    const user = await UserModel.findById(userId);
     const { password, updatedAt, ...other } = user._doc;
     res.status(200).json(other);
   } catch (err) {
+    res.status(500).json(err);
+  }
+};
+
+//get users
+export const getUsers = async (req, res) => {
+  try {
+    const users = await UserModel.find();
+    res.status(200).json(users);
+  } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 };

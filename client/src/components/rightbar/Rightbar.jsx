@@ -1,10 +1,12 @@
 import useStyles from './RightbarStyle';
-import { Users } from '../../dummyData';
-import Online from '../online/Online';
+import Friends from '../friend/Friend';
+import { useSelector } from 'react-redux';
 
 export default function Rightbar({profile}) {
     const classes = useStyles();
+    const user = JSON.parse(localStorage.getItem('profile'));
     const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+    const otherUsers = useSelector((state) => state.users.filter((usr) => usr._id !== user.result._id));
 
     const HomeRightbar = () => {
         return (
@@ -16,11 +18,11 @@ export default function Rightbar({profile}) {
                 </span>
             </div>
             <img className={classes.rightbarAd} src={PF + "ad.png"} alt=""/>
-            <h4 className={classes.rightbarTitle}>Online Friends</h4>
+            <h4 className={classes.rightbarTitle}>Les autres utilisateurs :</h4>
             <ul className={classes.rightbarFriends}>
                 {
-                    Users.map(u => (
-                        <Online key={u.id} user={u}/>
+                    otherUsers.map(u => (
+                        <Friends key={u._id} user={u}/>
                     ))
                 }
             </ul>
@@ -48,18 +50,6 @@ export default function Rightbar({profile}) {
             </div>
             <h4 className={classes.rightbarTitle}>User friends</h4>
             <div className={classes.rightbarFollowings}>
-              <div className={classes.rightbarFollowing}>
-                <img src={PF + "person/1.jpeg"} alt="" className={classes.rightbarFollowingImg}/>
-                <span className={classes.rightbarFollowingName}>John Carter</span>
-              </div>
-              <div className={classes.rightbarFollowing}>
-                <img src={PF + "person/1.jpeg"} alt="" className={classes.rightbarFollowingImg}/>
-                <span className={classes.rightbarFollowingName}>John Carter</span>
-              </div>
-              <div className={classes.rightbarFollowing}>
-                <img src={PF + "person/1.jpeg"} alt="" className={classes.rightbarFollowingImg}/>
-                <span className={classes.rightbarFollowingName}>John Carter</span>
-              </div>
               <div className={classes.rightbarFollowing}>
                 <img src={PF + "person/1.jpeg"} alt="" className={classes.rightbarFollowingImg}/>
                 <span className={classes.rightbarFollowingName}>John Carter</span>

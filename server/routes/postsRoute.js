@@ -1,14 +1,16 @@
 import express from 'express';
 
-import { createPost, updatePost, deletePost, likePost, getPost, getTimelinePosts } from '../controllers/posts.js';
+import { getPost, getFriendsPosts, getUserPosts, createPost, updatePost, deletePost, likePost } from '../controllers/posts.js';
+import auth from '../middlewares/auth.js';
 
 const router = express.Router();
 
-router.post("/", createPost);
-router.put("/:id", updatePost);
-router.delete("/:id", deletePost);
-router.put("/:id/like", likePost);
-router.get("/:id", getPost);
-router.get("/timeline/all", getTimelinePosts);
+router.get("/", getPost);
+router.get("/user/:id", getUserPosts);
+router.get("/friends/:id", getFriendsPosts);
+router.post("/", auth, createPost);
+router.put("/:id", auth, updatePost);
+router.delete("/:id", auth, deletePost);
+router.put("/:id/like", auth, likePost);
 
 export default router;
