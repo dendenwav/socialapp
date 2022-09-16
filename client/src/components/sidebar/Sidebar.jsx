@@ -7,7 +7,7 @@ export default function Sidebar() {
 
     return (
         <div className={classes.sidebarContainer}>
-            <div className={classes.sidebarWrapper}>
+            {/* <div className={classes.sidebarWrapper}>
                 <ul className={classes.sidebarList}>
                     <li className={classes.sidebarListItem}>
                         <RssFeed className={classes.sidebarListItemIcon}/>
@@ -57,7 +57,7 @@ export default function Sidebar() {
                         // ))
                     }
                 </ul>
-            </div>
+            </div> */}
         </div>
     )
 }

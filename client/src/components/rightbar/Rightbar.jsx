@@ -11,13 +11,13 @@ export default function Rightbar({profile}) {
     const HomeRightbar = () => {
         return (
           <>
-            <div className={classes.birthdayContainer}>
+            {/* <div className={classes.birthdayContainer}>
                 <img className={classes.birthdayImg} src={PF + "gift.png"} alt="" />
                 <span className={classes.birthdayText}>
                     <b>Pola Foster</b> and <b>3 other friends</b> have a birthday today
                 </span>
             </div>
-            <img className={classes.rightbarAd} src={PF + "ad.png"} alt=""/>
+            <img className={classes.rightbarAd} src={PF + "ad.png"} alt=""/> */}
             <h4 className={classes.rightbarTitle}>Les autres utilisateurs :</h4>
             <ul className={classes.rightbarFriends}>
                 {
@@ -33,7 +33,7 @@ export default function Rightbar({profile}) {
       const ProfileRightbar = () => {
         return (
           <>
-            <h4 className={classes.rightbarTitle}>User information</h4>
+            {/* <h4 className={classes.rightbarTitle}>User information</h4>
             <div className={classes.rightbarInfo}>
               <div className={classes.rightbarInfoItem}>
                 <span className={classes.rightbarKey}>City:</span>
@@ -54,7 +54,7 @@ export default function Rightbar({profile}) {
                 <img src={PF + "person/1.jpeg"} alt="" className={classes.rightbarFollowingImg}/>
                 <span className={classes.rightbarFollowingName}>John Carter</span>
               </div>
-            </div>
+            </div> */}
           </>
         );
       };
